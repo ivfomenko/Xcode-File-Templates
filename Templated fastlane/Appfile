@@ -1,0 +1,4 @@
+# The bundle identifier of your app
+app_identifier("")
+ # The apple developer account, which is owner/admin for your testflight
+apple_id("")

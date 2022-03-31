@@ -1,0 +1,281 @@
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+  - identifier_name
+  - function_body_length
+  - cyclomatic_complexity
+  - line_length
+  - type_body_length
+  - file_length
+  - function_parameter_count
+  - force_try
+  - block_based_kvo
+  - unused_setter_value
+  - type_name
+  - large_tuple
+  - nesting
+  - inclusive_language
+  - force_cast
+opt_in_rules:
+  - array_init
+  # - closure_body_length
+  # - discouraged_optional_collection
+  # - discouraged_optional_boolean
+  - discouraged_object_literal
+  - fallthrough
+  - file_name_no_space
+  - joined_default_parameter
+  - unused_declaration
+  - unused_setter_value
+  - xct_specific_matcher
+  - unavailable_function
+  # - missing_docs
+  - unused_import
+  - last_where
+  - flatmap_over_map_reduce
+  - collection_alignment
+  - untyped_error_in_catch
+  - yoda_condition
+  - empty_string
+  - type_name
+  - implicit_getter
+  - pattern_matching_keywords
+  - extension_access_modifier
+  - unneeded_parentheses_in_closure_argument
+  - number_separator
+  - syntactic_sugar
+  - first_where
+  - closure_spacing
+  - contains_over_first_not_nil
+  - contains_over_filter_count
+  - contains_over_filter_is_empty
+  - contains_over_range_nil_comparison
+  - weak_delegate
+  - empty_count
+  - optional_enum_case_matching
+  - orphaned_doc_comment
+  - prefer_self_type_over_type_of_self
+  - explicit_init
+  - overridden_super_call
+  - redundant_nil_coalescing
+  - attributes
+  - operator_usage_whitespace
+  - closure_end_indentation
+  - prohibited_super_call
+  - fatal_error_message
+  - vertical_parameter_alignment_on_call
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - ibinspectable_in_extension
+  - prefer_zero_over_explicit_init
+  - unneeded_notification_center_removal
+  - notification_center_detachment
+excluded:
+  - Carthage
+  - DerivedData
+  - Pods
+  - genstrings.swift
+  - Localize.swift
+# force_cast: warning
+identifier_name:
+  excluded:
+    - id
+
+# +------------------------------------------+--------+-------------+------------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+# | identifier                               | opt-in | correctable | enabled in your config | kind        | analyzer | configuration                                                                                                                                         |
+# +------------------------------------------+--------+-------------+------------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+# | anyobject_protocol                       | yes    | yes         | no                     | lint        | no       | warning                                                                                                                                               |
+# | array_init                               | yes    | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | attributes                               | yes    | no          | yes                    | style       | no       | warning, always_on_same_line: ["@IBAction", "@NSManaged"], always_on_line_above: []                                                                   |
+# | block_based_kvo                          | no     | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | class_delegate_protocol                  | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | closing_brace                            | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | closure_body_length                      | yes    | no          | no                     | metrics     | no       | warning: 20, error: 100                                                                                                                               |
+# | closure_end_indentation                  | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | closure_parameter_position               | no     | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | closure_spacing                          | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | collection_alignment                     | yes    | no          | yes                    | style       | no       | warning, align_colons: false                                                                                                                          |
+# | colon                                    | no     | yes         | yes                    | style       | no       | warning, flexible_right_spacing: false, apply_to_dictionaries: true                                                                                   |
+# | comma                                    | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | compiler_protocol_init                   | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | computed_accessors_order                 | no     | no          | yes                    | style       | no       | warning, order: get_set                                                                                                                               |
+# | conditional_returns_on_newline           | yes    | no          | no                     | style       | no       | warning, if_only: false                                                                                                                               |
+# | contains_over_filter_count               | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | contains_over_filter_is_empty            | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | contains_over_first_not_nil              | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | contains_over_range_nil_comparison       | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | control_statement                        | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | convenience_type                         | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | custom_rules                             | no     | no          | no                     | style       | no       | user-defined                                                                                                                                          |
+# | cyclomatic_complexity                    | no     | no          | no                     | metrics     | no       | warning: 10, error: 20, ignores_case_statements: false                                                                                                |
+# | deployment_target                        | no     | no          | yes                    | lint        | no       | warning, iOS_deployment_target: 7.0, macOS_deployment_target: 10.9, watchOS_deployment_target: 1.0, tvOS_deployment_target: 9.0                       |
+# | discarded_notification_center_observer   | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | discouraged_direct_init                  | no     | no          | yes                    | lint        | no       | warning, types: ["Bundle", "Bundle.init", "UIDevice", "UIDevice.init"]                                                                                |
+# | discouraged_object_literal               | yes    | no          | yes                    | idiomatic   | no       | warning, image_literal: true, color_literal: true                                                                                                     |
+# | discouraged_optional_boolean             | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | discouraged_optional_collection          | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | duplicate_enum_cases                     | no     | no          | yes                    | lint        | no       | error                                                                                                                                                 |
+# | duplicate_imports                        | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | dynamic_inline                           | no     | no          | yes                    | lint        | no       | error                                                                                                                                                 |
+# | empty_collection_literal                 | yes    | no          | no                     | performance | no       | warning                                                                                                                                               |
+# | empty_count                              | yes    | no          | yes                    | performance | no       | error, only_after_dot: false                                                                                                                          |
+# | empty_enum_arguments                     | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | empty_parameters                         | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | empty_parentheses_with_trailing_closure  | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | empty_string                             | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | empty_xctest_method                      | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | enum_case_associated_values_count        | yes    | no          | no                     | metrics     | no       | warning: 5, error: 6                                                                                                                                  |
+# | expiring_todo                            | yes    | no          | no                     | lint        | no       | (approaching_expiry_severity) warning, (reached_or_passed_expiry_severity) error                                                                      |
+# | explicit_acl                             | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | explicit_enum_raw_value                  | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | explicit_init                            | yes    | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | explicit_self                            | yes    | yes         | no                     | style       | yes      | warning                                                                                                                                               |
+# | explicit_top_level_acl                   | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | explicit_type_interface                  | yes    | no          | no                     | idiomatic   | no       | warning, excluded: [], allow_redundancy: false                                                                                                        |
+# | extension_access_modifier                | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | fallthrough                              | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | fatal_error_message                      | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | file_header                              | yes    | no          | no                     | style       | no       | warning, required_string: None, required_pattern: None, forbidden_string: None, forbidden_pattern: None                                               |
+# | file_length                              | no     | no          | no                     | metrics     | no       | warning: 400, error: 1000, ignore_comment_only_lines: false                                                                                           |
+# | file_name                                | yes    | no          | no                     | idiomatic   | no       | (severity) warning, excluded: ["LinuxMain.swift", "main.swift"], prefixPattern: , suffixPattern: \+.*, nestedTypeSeparator: .                         |
+# | file_name_no_space                       | yes    | no          | yes                    | idiomatic   | no       | (severity) warning, excluded: []                                                                                                                      |
+# | file_types_order                         | yes    | no          | no                     | style       | no       | warning, order: [[SwiftLintFramework.FileType.supportingType], [SwiftLintFramework.FileType.mainType], [SwiftLintFramework.FileType.extension], [S... |
+# | first_where                              | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | flatmap_over_map_reduce                  | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | for_where                                | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | force_cast                               | no     | no          | no                     | idiomatic   | no       | error                                                                                                                                                 |
+# | force_try                                | no     | no          | no                     | idiomatic   | no       | error                                                                                                                                                 |
+# | force_unwrapping                         | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | function_body_length                     | no     | no          | no                     | metrics     | no       | warning: 40, error: 100                                                                                                                               |
+# | function_default_parameter_at_end        | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | function_parameter_count                 | no     | no          | no                     | metrics     | no       | warning: 5, error: 8ignores_default_parameters: true                                                                                                  |
+# | generic_type_name                        | no     | no          | yes                    | idiomatic   | no       | (min_length) w/e: 1/0, (max_length) w/e: 20/1000, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true                             |
+# | ibinspectable_in_extension               | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | identical_operands                       | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | identifier_name                          | no     | no          | no                     | style       | no       | (min_length) w/e: 3/2, (max_length) w/e: 40/60, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true                               |
+# | implicit_getter                          | no     | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | implicit_return                          | yes    | yes         | no                     | style       | no       | warning, included: [function, getter, closure]                                                                                                        |
+# | implicitly_unwrapped_optional            | yes    | no          | no                     | idiomatic   | no       | warning, mode: allExceptIBOutlets                                                                                                                     |
+# | indentation_width                        | yes    | no          | no                     | style       | no       | severity: warning, indentation_width: 4include_comments: true                                                                                         |
+# | inert_defer                              | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | is_disjoint                              | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | joined_default_parameter                 | yes    | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | large_tuple                              | no     | no          | no                     | metrics     | no       | warning: 2, error: 3                                                                                                                                  |
+# | last_where                               | yes    | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | leading_whitespace                       | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | legacy_cggeometry_functions              | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_constant                          | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_constructor                       | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_hashing                           | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_multiple                          | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_nsgeometry_functions              | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | legacy_random                            | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | let_var_whitespace                       | yes    | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | line_length                              | no     | no          | no                     | metrics     | no       | warning: 120, error: 200, ignores urls: false, ignores function declarations: false, ignores comments: false, ignores interpolated strings: false     |
+# | literal_expression_end_indentation       | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | lower_acl_than_parent                    | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | mark                                     | no     | yes         | yes                    | lint        | no       | warning                                                                                                                                               |
+# | missing_docs                             | yes    | no          | no                     | lint        | no       | warning: open, public                                                                                                                                 |
+# | modifier_order                           | yes    | yes         | no                     | style       | no       | warning, preferred_modifier_order: [override, acl, setterACL, dynamic, mutators, lazy, final, required, convenience, typeMethods, owned]              |
+# | multiline_arguments                      | yes    | no          | no                     | style       | no       | warning, first_argument_location: any_line, only_enforce_after_first_closure_on_first_line: false                                                     |
+# | multiline_arguments_brackets             | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | multiline_function_chains                | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | multiline_literal_brackets               | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | multiline_parameters                     | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | multiline_parameters_brackets            | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | multiple_closures_with_trailing_closure  | no     | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | nesting                                  | no     | no          | no                     | metrics     | no       | (type_level) w: 1, (statement_level) w: 5                                                                                                             |
+# | nimble_operator                          | yes    | yes         | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | no_extension_access_modifier             | yes    | no          | no                     | idiomatic   | no       | error                                                                                                                                                 |
+# | no_fallthrough_only                      | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | no_grouping_extension                    | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | no_space_in_method_call                  | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | notification_center_detachment           | no     | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | nslocalizedstring_key                    | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | nslocalizedstring_require_bundle         | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | nsobject_prefer_isequal                  | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | number_separator                         | yes    | yes         | yes                    | style       | no       | warning, minimum_length: 0                                                                                                                            |
+# | object_literal                           | yes    | no          | no                     | idiomatic   | no       | warning, image_literal: true, color_literal: true                                                                                                     |
+# | opening_brace                            | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | operator_usage_whitespace                | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | operator_whitespace                      | no     | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | optional_enum_case_matching              | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | orphaned_doc_comment                     | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | overridden_super_call                    | yes    | no          | yes                    | lint        | no       | warning, excluded: [[]], included: [["*"]]                                                                                                            |
+# | override_in_extension                    | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | pattern_matching_keywords                | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | prefer_self_type_over_type_of_self       | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | prefer_zero_over_explicit_init           | yes    | yes         | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | prefixed_toplevel_constant               | yes    | no          | no                     | style       | no       | warning, only_private: false                                                                                                                          |
+# | private_action                           | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | private_outlet                           | yes    | no          | no                     | lint        | no       | warning, allow_private_set: false                                                                                                                     |
+# | private_over_fileprivate                 | no     | yes         | yes                    | idiomatic   | no       | warning, validate_extensions: false                                                                                                                   |
+# | private_unit_test                        | no     | no          | yes                    | lint        | no       | warning: XCTestCase                                                                                                                                   |
+# | prohibited_interface_builder             | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | prohibited_super_call                    | yes    | no          | yes                    | lint        | no       | warning, excluded: [[]], included: [["*"]]                                                                                                            |
+# | protocol_property_accessors_order        | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | quick_discouraged_call                   | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | quick_discouraged_focused_test           | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | quick_discouraged_pending_test           | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | raw_value_for_camel_cased_codable_enum   | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | reduce_boolean                           | no     | no          | yes                    | performance | no       | warning                                                                                                                                               |
+# | reduce_into                              | yes    | no          | no                     | performance | no       | warning                                                                                                                                               |
+# | redundant_discardable_let                | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | redundant_nil_coalescing                 | yes    | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_objc_attribute                 | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_optional_initialization        | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_set_access_control             | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_string_enum_value              | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_type_annotation                | yes    | yes         | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | redundant_void_return                    | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | required_deinit                          | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | required_enum_case                       | yes    | no          | no                     | lint        | no       | No protocols configured.  In config add 'required_enum_case' to 'opt_in_rules' and config using :\n\n'required_enum_case:\n  {Protocol Name}:\n   ... |
+# | return_arrow_whitespace                  | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | shorthand_operator                       | no     | no          | yes                    | style       | no       | error                                                                                                                                                 |
+# | single_test_class                        | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | sorted_first_last                        | yes    | no          | no                     | performance | no       | warning                                                                                                                                               |
+# | sorted_imports                           | yes    | yes         | no                     | style       | no       | warning                                                                                                                                               |
+# | statement_position                       | no     | yes         | yes                    | style       | no       | (statement_mode) default, (severity) warning                                                                                                          |
+# | static_operator                          | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | strict_fileprivate                       | yes    | no          | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | strong_iboutlet                          | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | superfluous_disable_command              | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | switch_case_alignment                    | no     | no          | yes                    | style       | no       | warning, indented_cases: false                                                                                                                        |
+# | switch_case_on_newline                   | yes    | no          | no                     | style       | no       | warning                                                                                                                                               |
+# | syntactic_sugar                          | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | todo                                     | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | toggle_bool                              | yes    | yes         | no                     | idiomatic   | no       | warning                                                                                                                                               |
+# | trailing_closure                         | yes    | no          | no                     | style       | no       | warning, only_single_muted_parameter: false                                                                                                           |
+# | trailing_comma                           | no     | yes         | yes                    | style       | no       | warning, mandatory_comma: false                                                                                                                       |
+# | trailing_newline                         | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | trailing_semicolon                       | no     | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | trailing_whitespace                      | no     | yes         | no                     | style       | no       | warning, ignores_empty_lines: false, ignores_comments: true                                                                                           |
+# | type_body_length                         | no     | no          | no                     | metrics     | no       | warning: 200, error: 350                                                                                                                              |
+# | type_contents_order                      | yes    | no          | no                     | style       | no       | warning, order: [[SwiftLintFramework.TypeContent.case], [SwiftLintFramework.TypeContent.typeAlias, SwiftLintFramework.TypeContent.associatedType],... |
+# | type_name                                | no     | no          | no                     | idiomatic   | no       | (min_length) w/e: 3/0, (max_length) w/e: 40/1000, excluded: [], allowed_symbols: [], validates_start_with_lowercase: true                             |
+# | unavailable_function                     | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | unneeded_break_in_switch                 | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | unneeded_notification_center_removal     | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | unneeded_parentheses_in_closure_argument | yes    | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | unowned_variable_capture                 | yes    | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | untyped_error_in_catch                   | yes    | yes         | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | unused_capture_list                      | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | unused_closure_parameter                 | no     | yes         | yes                    | lint        | no       | warning                                                                                                                                               |
+# | unused_control_flow_label                | no     | yes         | yes                    | lint        | no       | warning                                                                                                                                               |
+# | unused_declaration                       | yes    | no          | yes                    | lint        | yes      | severity: error, include_public_and_open: false                                                                                                       |
+# | unused_enumerated                        | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | unused_import                            | yes    | yes         | yes                    | lint        | yes      | severity: warning, require_explicit_imports: false, allowed_transitive_imports: []                                                                    |
+# | unused_optional_binding                  | no     | no          | yes                    | style       | no       | warning, ignore_optional_try: false                                                                                                                   |
+# | unused_setter_value                      | no     | no          | no                     | lint        | no       | warning                                                                                                                                               |
+# | valid_ibinspectable                      | no     | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# | vertical_parameter_alignment             | no     | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | vertical_parameter_alignment_on_call     | yes    | no          | yes                    | style       | no       | warning                                                                                                                                               |
+# | vertical_whitespace                      | no     | yes         | yes                    | style       | no       | warning, max_empty_lines: 1                                                                                                                           |
+# | vertical_whitespace_between_cases        | yes    | yes         | no                     | style       | no       | warning                                                                                                                                               |
+# | vertical_whitespace_closing_braces       | yes    | yes         | no                     | style       | no       | N/A                                                                                                                                                   |
+# | vertical_whitespace_opening_braces       | yes    | yes         | no                     | style       | no       | N/A                                                                                                                                                   |
+# | void_return                              | no     | yes         | yes                    | style       | no       | warning                                                                                                                                               |
+# | weak_delegate                            | no     | yes         | yes                    | lint        | no       | warning                                                                                                                                               |
+# | xct_specific_matcher                     | yes    | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | xctfail_message                          | no     | no          | yes                    | idiomatic   | no       | warning                                                                                                                                               |
+# | yoda_condition                           | yes    | no          | yes                    | lint        | no       | warning                                                                                                                                               |
+# +------------------------------------------+--------+-------------+------------------------+-------------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+

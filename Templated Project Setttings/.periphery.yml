@@ -1,0 +1,22 @@
+workspace: YOUR_PROJECT.xcworkspace
+schemes:
+  - YOUR_SHEME
+targets:
+  - YOUR_PROJECT
+index_exclude:
+report_exclude:
+  - YOUR_PROJECT/Library/Files/*.swift
+  - YOUR_PROJECT/Library/*/*.swift
+
+  - YOUR_PROJECT/Localized/*.swift
+  - YOUR_PROJECT/Extensions/*.swift
+  - YOUR_PROJECT/Extensions/*/*.swift
+  - YOUR_PROJECT/Extensions/UI/*/*.swift
+
+  - YOUR_PROJECT/Components/*/*.swift
+  
+format: xcode
+retain_public: true
+retain_objc_accessible: true
+retain_unused_protocol_func_params: true
+retain_assign_only_properties: false

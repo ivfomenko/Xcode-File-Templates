@@ -1,0 +1,55 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  desc "increment current application build number"
+  lane :increment do
+      increment_build_number
+  end
+
+  # appleId & bundle  can be hardcoded in fastlane file or in CI settings
+  desc "CI build command for deploy application using AppStoreConnect API KEY. Mandatory options: scheme, apple_id"
+  lane :jenkins_deploy do |options|
+      scheme = options[:scheme]
+      appleId = options[:apple_id]
+      api_key_path = options[:api_key_path]
+      bundle = options[:bundle]
+      build_app(workspace: "YOUR_PROJECT.xcworkspace", scheme: scheme, xcargs: "-allowProvisioningUpdates")
+      upload_symbols_to_crashlytics
+      upload_to_testflight(skip_waiting_for_build_processing: true, apple_id: appleId, api_key_path: api_key_path, app_identifier: bundle)
+  end
+
+  # appleId & bundle  can be hardcoded in fastlane file or in CI settings
+  desc "CI build command for deploy application using AppleId API KEY. Mandatory options: scheme"
+  lane :jenkins_deploy do |options|
+      scheme = options[:scheme]
+      appleId = options[:apple_id]
+      bundle = options[:bundle]
+      build_app(workspace: "YOUR_PROJECT.xcworkspace", scheme: scheme, xcargs: "-allowProvisioningUpdates")
+      upload_symbols_to_crashlytics
+      upload_to_testflight(skip_waiting_for_build_processing: true, app_identifier: bundle)
+  end
+
+  desc "Run Unit tests and Sonar scan in needed env."
+  lane :tests do |options|
+      scheme = options[:scheme]
+      scan(workspace: "YOUR_PROJECT.xcworkspace", scheme: scheme, code_coverage: true, derived_data_path: "./DerivedData", output_directory: "./sonar-reports", device: "iPhone 12 Pro")
+      slather(workspace: "YOUR_PROJECT.xcworkspace", proj: "YOUR_PROJECT.xcodeproj", cobertura_xml: true, jenkins: true, scheme: scheme, build_directory: "./DerivedData", output_directory: "./sonar-reports")
+      swiftlint(config_file: ".swiftlint.yml", output_file: "./sonar-reports/swiftlint.txt", ignore_exit_status: true)
+      sonar
+  end
+end

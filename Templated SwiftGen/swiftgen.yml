@@ -1,0 +1,28 @@
+strings:
+  inputs: ${STRINGS_INPUT}
+  outputs:
+    - templatePath: YOUR_PROJECT/SwiftGen/Templates/structured-swift5-custom.stencil
+      output: YOUR_PROJECT/SwiftGen/Localized.swift
+      params:
+        enumName: AppStrings
+xcassets:
+  - inputs: ${IMAGES_INPUT}
+    outputs:
+        - templateName: swift5
+          output: YOUR_PROJECT/SwiftGen/ImageAssets.swift
+          params:
+            enumName: AppImages
+
+  - inputs: ${COLORS_INPUT}
+    outputs:
+        - templateName: swift5
+          output: YOUR_PROJECT/SwiftGen/Colors.swift
+          params:
+            enumName: AppColors
+fonts:
+  inputs: ${FONTS_INPUT}
+  outputs:
+    templateName: swift5
+    output: YOUR_PROJECT/SwiftGen/Fonts.swift
+    params:
+        enumName: AppFonts

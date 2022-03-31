@@ -1,0 +1,17 @@
+//
+//  your-base-shemen-scheme.xcconfig
+//  PROJECT_NAME
+//
+//  Copyright © coreteka. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+STRINGS_INPUT = YOUR_PROJECT/PATH_TO_YOUR_STRINGS.strings
+
+IMAGES_INPUT = YOUR_PROJECT/PATH_TO_YOUR_Assets.xcassets
+
+COLORS_INPUT = YOUR_PROJECT/PATH_TO_YOUR_colors.xcassets
+
+FONTS_INPUT = YOUR_PROJECT/PATH_TO_YOUR_FontFiles
