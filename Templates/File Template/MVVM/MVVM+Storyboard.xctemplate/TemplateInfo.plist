@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MVVM + Repository</string>
+	<string>MVVM+Storyboard</string>
 	<key>Description</key>
-	<string>Contains base module for files using MVVM and Repository Patterns</string>
+	<string>Contains base module for files using MVVM with Storyboard usage</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
