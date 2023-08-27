@@ -1,23 +1,13 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import RxCocoa
 import RxSwift
 
 // MARK: - ___VARIABLE_sceneName___Interactor
 /// Abstract logic layer for ___VARIABLE_sceneName___InteractorImpl
-protocol ___VARIABLE_sceneName___Interactor {
-    
-}
+public protocol ___VARIABLE_sceneName___InteractorType {}
 
 // MARK: - ___VARIABLE_sceneName___InteractorImpl
 /// Implementation class for ___VARIABLE_sceneName___Interactor
-final class ___VARIABLE_sceneName___InteractorImpl {
+final public class ___VARIABLE_sceneName___Interactor {
     
     // - Internal Properties
 
@@ -33,7 +23,7 @@ final class ___VARIABLE_sceneName___InteractorImpl {
 //    }
 }
 
-// MARK: - ___VARIABLE_sceneName___InteractorImpl: ___VARIABLE_sceneName___Interactor
-extension ___VARIABLE_sceneName___InteractorImpl : ___VARIABLE_sceneName___Interactor {
+// MARK: - ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___InteractorType
+extension ___VARIABLE_sceneName___Interactor : ___VARIABLE_sceneName___InteractorType {
     
 }
