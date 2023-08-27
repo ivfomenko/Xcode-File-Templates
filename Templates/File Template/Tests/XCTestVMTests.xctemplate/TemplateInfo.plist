@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MVVM QuickSpec</string>
+	<string>MVVM XCTest</string>
 	<key>Description</key>
-	<string>Contains Quick framework init Test template for project with MVVM usage</string>
+	<string>Contains Unit Test template for project with MVVM and XCTest framework usage</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the View Model to test</string>
+			<string>The name of the Test to create</string>
 			<key>Identifier</key>
 			<string>sceneName</string>
 			<key>Name</key>
@@ -34,11 +34,11 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewModelTests</string>
+			<string>___VARIABLE_sceneName:identifier___ViewModelTest</string>
 			<key>Description</key>
-			<string>View Model Unit Test name</string>
+			<string>ViewwModel Test name</string>
 			<key>Identifier</key>
-			<string>viewModel</string>
+			<string>viewModelName</string>
 			<key>Name</key>
 			<string>View Model Test Name:</string>
 			<key>Required</key>
@@ -50,8 +50,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>Simple QuickSpec test for VM</string>
-	<key>SupportsSwiftPackage</key>
-	<true/>
+	<string>Contains Unit Test template for project with MVVM and XCTest framework usage</string>
 </dict>
 </plist>

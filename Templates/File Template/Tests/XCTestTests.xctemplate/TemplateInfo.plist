@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MVVM + Repository Unit Tests</string>
+	<string>XCTest</string>
 	<key>Description</key>
-	<string>Contains Unit Test template  for project which used MVVM and Repository Patterns</string>
+	<string>Contains Unit Test template for project wit XCTest framework usage</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___ViewModelTest</string>
+			<string>___VARIABLE_sceneName:identifier___Test</string>
 			<key>Description</key>
-			<string>The viewModel Test name</string>
+			<string>Unit Test name</string>
 			<key>Identifier</key>
-			<string>viewModelName</string>
+			<string>sutname</string>
 			<key>Name</key>
-			<string>View Model Test Name:</string>
+			<string>Test Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -50,6 +50,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>Contains Unit Test template  for project which used MVVM and Repository Patterns</string>
+	<string>ontains Unit Test template for project wit XCTest framework usage</string>
 </dict>
 </plist>

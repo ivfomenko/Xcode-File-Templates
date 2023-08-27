@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Presenter Test</string>
+	<string>QuickSpec Test template</string>
 	<key>Description</key>
-	<string>Contains Unit Test template for project which used RxViper</string>
+	<string>Contains Quick framework init Test template for custom object</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Description</key>
-			<string>The name of the Test to create</string>
+			<string>Test name</string>
 			<key>Identifier</key>
 			<string>sceneName</string>
 			<key>Name</key>
@@ -34,13 +34,13 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___PresenterTest</string>
+			<string>___VARIABLE_sceneName:identifier___Tests</string>
 			<key>Description</key>
-			<string>Presenter Unit Test name</string>
+			<string>Unit Test name</string>
 			<key>Identifier</key>
-			<string>presenterName</string>
+			<string>sutName</string>
 			<key>Name</key>
-			<string>Presenter Test Name:</string>
+			<string>Test Name:</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -50,6 +50,8 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>Contains Unit Test template for project which used RxViper</string>
+	<string>Contains Quick framework init Test template for custom object</string>
+	<key>SupportsSwiftPackage</key>
+	<true/>
 </dict>
 </plist>
