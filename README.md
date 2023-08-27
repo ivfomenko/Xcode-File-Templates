@@ -1,156 +1,162 @@
 # Xcode File Templates
 Xcode File Templates for automatic files creation
 
-# Table of Contains
-- [Included Templates:](#included-templates-)
-- [Xcode Templates](#xcode-templates)
-  * [Xcode Templates Requirements:](#xcode-templates-requirements-)
-  * [Xcode Templates Contains:](#xcode-templates-contains-)
-    + [Base Project Setup:](#base-project-setup-)
-    + [Base MVVM Templates:](#base-mvvm-templates-)
-    + [MVVM with Repositories:](#mvvm-with-repositories-)
-    + [Repository:](#repository-)
-    + [UseCase:](#usecase-)
-    + [Viper with Rx usage:](#viper-with-rx-usage-)
-    + [Unit Tests Templates:](#unit-tests-templates-)
-  * [Xcode Teamplated Setup Guide:](#xcode-teamplated-setup-guide-)
-    + [Using script | With adding templates in one folder](#using-script---with-adding-templates-in-one-folder)
+- [Xcode File Templates](#xcode-file-templates)
+  * [Templates Contains:](#templates-contains-)
+    + [MVVM](#mvvm)
+      - [SwiftUI](#swiftui)
+      - [UIKit](#uikit)
+    + [VIPER](#viper)
+    + [Domain Layer](#domain-layer)
+    + [Unit Tests](#unit-tests)
+      - [Quick & Nimble](#quick---nimble)
+      - [XCTest](#xctest)
+    + [Tools:](#tools-)
+    + [Extensions](#extensions)
+  * [Install:](#install-)
+    + [Default install](#default-install)
+    + [Advanced install](#advanced-install)
     + [Manual | With Saving Folder structure](#manual---with-saving-folder-structure)
-  * [Xcode Templates ssage guide:](#xcode-templates-ssage-guide-)
-- [Project setup Templates](#project-setup-templates)
-  * [General](#general)
-  * [Automatically localization tools](#automatically-localization-tools)
-    + [genstring.swift](#genstringswift)
-    + [export-text.py](#export-textpy)
-    + [import-text.py](#import-textpy)
-  * [SwiftGen](#swiftgen)
-  * [SonarQube](#sonarqube)
-  * [Swiftlint](#swiftlint)
-  * [Periphery](#periphery)
+  * [Usage:](#usage-)
+  * [Xcode Templates Requirements:](#xcode-templates-requirements-)
+  * [Project setup Templates](#project-setup-templates)
+    + [General](#general)
+    + [Automatically localization tools](#automatically-localization-tools)
+      - [genstring.swift](#genstringswift)
+      - [export-text.py](#export-textpy)
+      - [import-text.py](#import-textpy)
+    + [SwiftGen](#swiftgen)
+    + [SonarQube](#sonarqube)
+    + [Swiftlint](#swiftlint)
+    + [Periphery](#periphery)
 
-## Included Templates:
-- Xcode files Templates
-  * Base Project Templates
-  * Base MVVM Templates
-  * MVVM with Repository & UseCases usage
-  * MVVM Repository & UseCases
-  * VIPER pattern with Rx and Routers usage
-  * Unit Tests for ViewModel based in XCTestsCase
-  * Unit Tests for Presenter based on XCTestCase
-  * Unit Tests for Presenter based on Nimble and Quick
-  * Unit Tests for ViewModel based on Nimble and Quick
-- Project setup Templates
-  * Templated fastlane 
-  * Templated SonarQube
-  * Templated SwiftGen
-  * Templates for Project
-    + gitignore
-    + periphery configs
-    + swiftlint configs
-    + strings generation and export scripts
+## Templates Contains:
 
-## Xcode Templates
+### MVVM
 
-### Xcode Templates Requirements:
-- [Swinject](https://github.com/Swinject/Swinject) / Dependency injection framework for Swift with iOS/macOS/Linux
-- [RxSwift](https://github.com/ReactiveX/RxSwift) / Reactive Programming in Swift
-- [Realm](https://github.com/realm/realm-cocoa) / Realm is a mobile database: a replacement for Core Data & SQLite
-- [Moya](https://github.com/Moya/Moya) / Network abstraction layer written in Swift
-- [Nimble](https://github.com/Quick/Nimble) / Use Nimble to express the expected outcomes of Swift or Objective-C expressions
-- [Quick](https://github.com/Quick/Quick) / Quick is a behavior-driven development framework for Swift and Objective-C
+#### SwiftUI
+- [View Model + View](/Templates/File%20Template/SwiftUI%20MVVM/MVVM.xctemplate/)
 
-### Xcode Templates Contains:
+#### UIKit
+- [MVVM + Routing](/Templates/File%20Template/UIKit%20MVVM/MVVM+Routing.xctemplate/)
+- [MVVM + Storyboard](/Templates/File%20Template/UIKit%20MVVM/MVVM+Storyboard.xctemplate/)
 
-#### Base Project Setup:
-- Common and useful Extension
-- Base Network Layer
-- Realm Storage Manager
-- Realm-Combine Storage Manager
-- Routing system (including animators & transitions)
-- StoryboardInitializable & CellInizializable
+### VIPER
+- [VIPER + Rx](/Templates/File%20Template/VIPER/VIPER+Rx.xctemplate/)
 
----------------------
+### Domain Layer 
 
-#### Base MVVM Templates:
-- ViewModel.swift
-- ViewController.swift
-- View.storyboard
-- Builder.swift
+- [Repository](/Templates/File%20Template/Domain%20Layer/Repository.xctemplate/)
+- [Use Case](/Templates/File%20Template/Domain%20Layer/UseCase.xctemplate/)
+- [Network+Moya](/Templates/File%20Template/Domain%20Layer/Network+Moya.xctemplate/)
+- [Storage+CombineRealm](/Templates/File%20Template/Domain%20Layer/Storage+CombineRealm.xctemplate/)
+- [Storage+RxRealm](/Templates/File%20Template/Domain%20Layer/Storage+RxRealm.xctemplate/)
 
----------------------
+### Unit Tests
 
-#### MVVM with Repositories:
-- ViewModel.swift
-- ViewController.swift
-- View.storyboard
-- Builder.swift
-- Router.swift
-- Route.swift
-- ViewModelUseCases.swift
+#### Quick & Nimble
+- [View Model](/Templates/File%20Template/Tests/QuickSpecVMTests.xctemplate/)
+- [Presenter](/Templates/File%20Template/Tests/QuickSpecPresenterTests.xctemplate/)
+- [Custom](/Templates/File%20Template/Tests/QuickSpecTests.xctemplate/)
 
----------------------
+#### XCTest
+- [View Model](/Templates/File%20Template/Tests/XCTestVMTests.xctemplate/)
+- [Presenter](/Templates/File%20Template/Tests/XCTestPresenterTests.xctemplate/)
+- [Custom](/Templates/File%20Template/Tests/XCTestTests.xctemplate/)
 
-#### Repository:
-- Repository.swift
+### Tools: 
+- [`.json`](/Templates/File%20Template/Tools/JSON.xctemplate/)
+- [`.stencil`](/Templates/File%20Template/Tools/Stencil.xctemplate/)
 
----------------------
+### Extensions 
+- [Foundation extensions](/Templates/File%20Template/Extensions/Extensions.xctemplate/)
+- [Fonts provider](/Templates/File%20Template/Extensions/Fonts.xctemplate/)
+- [Realm+Extensions](/Templates/File%20Template/Extensions/Realm+Extensions.xctemplate/)
+- [Routing](/Templates/File%20Template/Extensions/Routing.xctemplate/)
+- [Rx extensions](/Templates/File%20Template/Extensions/Rx+Extensions.xctemplate/)
+- [UIKit extensions](/Templates/File%20Template/Extensions/UIExtensions.xctemplate/)
 
-#### UseCase:
-- UseCase.swift
+## Install:
 
----------------------
+### Default install 
 
-#### Viper with Rx usage:
-- Presenter.swift
-- ViewController.swift
-- View.storyboard
-- Builder.swift
-- Router.swift
-- Route.swift
-- Iteractor.swift
-
----------------------
-
-#### Unit Tests Templates: 
-- PresenterTests.swift based on XCTests
-- ViewModelTests.swift based on XCTests
-- PresetnerTests.swift based on Quick&Spec
-- ViewModelTests.swift based on Quick&Spec
-
-#### Tools: 
-- `.json` file
-- `.stencil` file
-
-### Xcode Teamplated Setup Guide:
-
-#### Using script | With adding templates in one folder
 Only need execute next commands in terminal:
 
-```
+```bash
 cd ~/Downloads
 git clone https://github.com/coreteka-service/iOS-Templates
 cd Xcode-File-Templates
-sh ./install.sh
+sh ./install.sh -a
 cd ..
 rm -rf Xcode-File-Templates
 ```
 
 You should see one of such kind of output message:
-``` 
-✅ Templates installed to: ~/Library/Developer/Xcode/Templates/Project Templates/ 
+```bash
+✅ All templates installed to : ~/Library/Developer/Xcode/Templates/Project Templates/ 
 ```
 
-#### Manual | With Saving Folder structure
+### Advanced install
+
+If you interested in special templates, you can use options for script:
+
+Install all templates:
+```bash
+sh ./install.sh -a
+```
+
+Install Extensions templates:
+```bash
+sh ./install.sh -e
+```
+
+Install Tests templates:
+```bash
+sh ./install.sh -t
+```
+
+Install Tools templates:
+```bash
+sh ./install.sh -o
+```
+
+Install MVVM templates:
+```bash
+sh ./install.sh -m
+```
+
+Install Viper templates:
+```bash
+sh ./install.sh -v
+```
+
+> **Note**: You can combine several options. But keep in mind, in case of `-a` usage, script will install all teamplates and exit from execution no matter to other options.
+
+### Manual | With Saving Folder structure
 1. Open folder `Templates/File Template` from downloaded or cloned repository. 
 2. Go to direction `~/Library/Developer/Xcode/` and set folders with templates
 3. If direction `~/Library/Developer/Xcode/` already has folder Templates and File Templates, just use the following folders and paste it into File Templates folder.
 
-
-### Xcode Templates ssage guide:
+## Usage:
 ```
 - CMD+N //  and select needed Template 
 - New -> File -> //  and select needed
 ```
+
+## Xcode Templates Requirements:
+
+For comfortable use of all templates, it is recommended to install the following dependencies in your projects:
+
+**Mandatory:**
+- [Nimble](https://github.com/Quick/Nimble) / Use Nimble to express the expected outcomes of Swift or Objective-C expressions
+- [Quick](https://github.com/Quick/Quick) / Quick is a behavior-driven development framework for Swift and Objective-C
+
+**Optional**
+- [Moya](https://github.com/Moya/Moya) / Network abstraction layer written in Swift
+- [Swinject](https://github.com/Swinject/Swinject) / Dependency injection framework for Swift with iOS/macOS/Linux
+- [RxSwift](https://github.com/ReactiveX/RxSwift) / Reactive Programming in Swift
+- [Realm](https://github.com/realm/realm-cocoa) / Realm is a mobile database: a replacement for Core Data & SQLite
+
 
 ## Project setup Templates
 
