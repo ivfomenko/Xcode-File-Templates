@@ -40,30 +40,30 @@ fi
 
 if [ -n "$INSTALL_EXTENSIONS" ]; then
     baseDir="Templates/File Template/Extensions"
-    cp -R "${baseDir}" "${installDirectory}/Extensions/"
-    echo "✅ Extensions templates installed to ${installDirectory}/Extensions"
+    cp -R "${baseDir}" "${installDirectory}/File Template/Extensions/"
+    echo "✅ Extensions templates installed to ${installDirectory}/File Template/Extensions"
 fi
 
 if [ -n "$INSTALL_TESTS" ]; then
     baseDir="Templates/File Template/Tests"
-    cp -R "${baseDir}" "${installDirectory}/Tests/"
-    echo "✅ Test templates installed to ${installDirectory}/Extensions"
+    cp -R "${baseDir}" "${installDirectory}/File Template/Tests/"
+    echo "✅ Test templates installed to ${installDirectory}/File Template/Extensions"
 fi
 
 if [ -n "$INSTALL_TOOLS" ]; then
     baseDir="Templates/File Template/Tools"
-    cp -R "${baseDir}" "${installDirectory}/Tools/"
-    echo "✅ Non-Swift templates installed to ${installDirectory}/Tools"
+    cp -R "${baseDir}" "${installDirectory}/File Template/Tools/"
+    echo "✅ Non-Swift templates installed to ${installDirectory}/File Template/Tools"
 fi
 
 if [ -n "$INSTALL_MVVM" ]; then
     baseDir="Templates/File Template/MVVM"
-    cp -R "${baseDir}" "${installDirectory}/MVVM/"
-    echo "✅ MVVM templates installed to ${installDirectory}/MVVM"
+    cp -R "${baseDir}" "${installDirectory}/File Template/MVVM/"
+    echo "✅ MVVM templates installed to ${installDirectory}/File Template/MVVM"
 fi
 
 if [ -n "$INSTALL_VIP" ]; then
     baseDir="Templates/File Template/VIPER"
-    cp -R "${baseDir}" "${installDirectory}/VIPER/"
-    echo "✅ VIPER templates installed to ${installDirectory}/VIPER"
+    cp -R "${baseDir}" "${installDirectory}/File Template/VIPER/"
+    echo "✅ VIPER templates installed to ${installDirectory}/File Template/VIPER"
 fi
