@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>Repository</string>
 	<key>Description</key>
-	<string>Contains base class for Data Repositorys</string>
+	<string>Contains base class for Repository object with base abstract layer</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>

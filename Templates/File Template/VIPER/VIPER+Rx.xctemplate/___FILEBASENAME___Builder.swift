@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Swinject
 
-final class ___VARIABLE_sceneName___Builder {
+struct ___VARIABLE_sceneName___Builder {
     static func build(injector: Container) -> ___VARIABLE_sceneName___ViewController {
         let viewController = ___VARIABLE_sceneName___ViewController.board(.___VARIABLE_sceneName___)
 
