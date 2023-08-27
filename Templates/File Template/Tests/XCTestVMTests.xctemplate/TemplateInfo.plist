@@ -36,7 +36,7 @@
 			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___ViewModelTest</string>
 			<key>Description</key>
-			<string>ViewwModel Test name</string>
+			<string>ViewModel Test name</string>
 			<key>Identifier</key>
 			<string>viewModelName</string>
 			<key>Name</key>
