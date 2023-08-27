@@ -14,5 +14,30 @@
 	<string>JSON</string>
 	<key>SupportsSwiftPackage</key>
 	<true/>
+		<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the JSON File to create</string>
+			<key>Identifier</key>
+			<string>sceneName</string>
+			<key>Name</key>
+			<string>Json file name:</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_sceneName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
 </dict>
 </plist>

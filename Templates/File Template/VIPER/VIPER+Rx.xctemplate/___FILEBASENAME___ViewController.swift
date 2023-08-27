@@ -1,15 +1,9 @@
-//
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import RxCocoa
 import RxSwift
 
-class ___VARIABLE_sceneName___ViewController: UIViewController, StoryboardInitializable {
+// MARK: - ___VARIABLE_sceneName___ViewController
+
+final class ___VARIABLE_sceneName___ViewController: UIViewController, StoryboardInitializable {
 
     // - Outlets
 
@@ -24,15 +18,15 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, StoryboardInitia
         self.configUI()
         self.configBinding()
     }
+}
+
+// MARK: - Private
+
+private extension ___VARIABLE_sceneName___ViewController {
 
     // - UI Setup
-    private func configUI() {
-
-    }
+    func configUI() {}
 
     // - Binding Setup
-    private func configBinding() {
-
-    }
-
+    func configBinding() {}
 }

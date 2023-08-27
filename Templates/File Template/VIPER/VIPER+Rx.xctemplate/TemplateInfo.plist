@@ -5,7 +5,7 @@
 	<key>DefaultCompletionName</key>
 	<string>RxViper Module</string>
 	<key>Description</key>
-	<string>CContains base module for files for Viper Arch with Rx usage</string>
+	<string>Contains base files for project with Viper and Rx usage</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
@@ -120,6 +120,6 @@
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>Contains base module for files for Viper Arch with Rx usage</string>
+	<string>Contains base files for project with Viper and Rx usage</string>
 </dict>
 </plist>
