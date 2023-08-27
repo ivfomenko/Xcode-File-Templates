@@ -12,5 +12,7 @@
 	<string>1</string>
 	<key>Summary</key>
 	<string>Empty Stencil template file</string>
+	<key>SupportsSwiftPackage</key>
+	<true/>
 </dict>
 </plist>

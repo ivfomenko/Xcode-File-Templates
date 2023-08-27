@@ -12,5 +12,7 @@
 	<string>1</string>
 	<key>Summary</key>
 	<string>JSON</string>
+	<key>SupportsSwiftPackage</key>
+	<true/>
 </dict>
 </plist>
