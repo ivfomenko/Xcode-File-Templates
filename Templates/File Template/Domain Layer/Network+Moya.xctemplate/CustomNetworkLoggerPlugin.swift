@@ -1,11 +1,3 @@
-//
-//  CustomNetworkLoggerPlugin.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import Moya
 import Result
 import Foundation

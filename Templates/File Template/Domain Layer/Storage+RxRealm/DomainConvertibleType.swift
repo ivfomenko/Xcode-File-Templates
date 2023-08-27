@@ -1,18 +1,10 @@
-//
-//  DomainConvertibleType.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import Foundation
 
 /**
  Protocol for platform's model that provide
  a unified way for converting Domain's models to Platform's models.
  */
-protocol DomainConvertibleType {
+public protocol DomainConvertibleType {
     
     // Domain's model type
     associatedtype DomainType: Decodable

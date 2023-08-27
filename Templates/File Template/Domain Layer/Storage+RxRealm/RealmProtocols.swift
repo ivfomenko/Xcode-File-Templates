@@ -1,15 +1,8 @@
-//
-//  RealmProtocols.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
 import RxSwift
 import RealmSwift
 
 /// Protocol to managed and connet ViewModel's JSON-codable models & Realm-containered models
-protocol DomainStorageProtocol {
+public protocol DomainStorageProtocol {
     
     typealias RealmConvertableType = Object & DomainConvertibleType
     
@@ -31,7 +24,7 @@ protocol DomainStorageProtocol {
 }
 
 /// Protocol to managed and connet ViewModel's Realm-containered models
-protocol RealmStorageProtocol {
+public protocol RealmStorageProtocol {
     
     typealias RealmConvertableType = Object & DomainConvertibleType
     

@@ -1,14 +1,6 @@
-//
-//  NetworkActivityIndicatorManager.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import UIKit
 
-class NetworkActivityIndicatorManager {
+final public class NetworkActivityIndicatorManager {
     
     private static var loadingCount = 0
     

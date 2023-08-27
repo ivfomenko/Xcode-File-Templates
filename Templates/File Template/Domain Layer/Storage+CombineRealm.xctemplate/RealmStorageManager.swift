@@ -1,17 +1,9 @@
-//
-//  RealmStorageManager.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import RealmSwift
 import Combine
 import Combine_Realm
 
 // MARK: - RealmStorageManager
-class RealmStorageManager {
+public class RealmStorageManager {
     private var cancellables = Set<AnyCancellable>()
 }
 

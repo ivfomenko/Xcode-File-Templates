@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>Realm Storage Manager</string>
+	<string>RxRealm Storage Manager</string>
 	<key>Description</key>
-	<string>Realm Storage Manager</string>
+	<string>RxRealm Storage Manager</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>SortOrder</key>
 	<string>9</string>
 	<key>Summary</key>
-	<string>Realm Storage Manager</string>
+	<string>RxRealm Storage Manager</string>
 </dict>
 </plist>

@@ -1,16 +1,8 @@
-//
-//  DatabaseProtocols.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import Foundation
 import Combine
 import RealmSwift
 
-protocol DomainStorageProtocol {
+public protocol DomainStorageProtocol {
     /// typealias for realm model
     typealias RealmConvertableType = Object & DomainConvertibleType
     
@@ -36,7 +28,7 @@ protocol DomainStorageProtocol {
     func subscribeOnDomainObjects<T: RealmConvertableType>(realmType: T.Type, predicate: NSPredicate?) -> AnyPublisher<[T.DomainType], Error>
 }
 
-protocol RealmStorageProtocol {
+public protocol RealmStorageProtocol {
     /// Set Realm Object to Data Base
     ///
     /// - Parameter realmModel: Realm Object to save

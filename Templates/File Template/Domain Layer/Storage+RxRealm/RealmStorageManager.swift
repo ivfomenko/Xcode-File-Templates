@@ -1,17 +1,9 @@
-//
-//  RealmStorageManager.swift
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  ___COPYRIGHT___
-//
-
 import Foundation
 import RealmSwift
 import RxSwift
 import RxRealm
 
-struct DatabaseChangeset {
+public struct DatabaseChangeset {
     let deleted: [Int]
     let inserted: [Int]
     let updated: [Int]
@@ -21,7 +13,7 @@ typealias RealmObjectsObservingResult<T: DomainConvertibleType> = (objects: [T.D
 typealias DatabaseObjectsObservingResult<T> = (objects: [T], changeset: DatabaseChangeset)
 
 // MARK: - RealmStorageManager
-class RealmStorageManager {
+public class RealmStorageManager {
     private let bag = DisposeBag()
 }
 
