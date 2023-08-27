@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MVVM+Routing</string>
+	<string>UIKit MVVM+Routing</string>
 	<key>Description</key>
-	<string>Contains base module for files using MVVM with Routing Pattern</string>
+	<string>Contains base file group for UIKIt project with MVVM and Routing usage</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Options</key>
