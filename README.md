@@ -117,6 +117,9 @@ Xcode File Templates for automatic files creation
 - PresetnerTests.swift based on Quick&Spec
 - ViewModelTests.swift based on Quick&Spec
 
+#### Tools: 
+- `.json` file
+- `.stencil` file
 
 ### Xcode Teamplated Setup Guide:
 
